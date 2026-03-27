@@ -19,7 +19,7 @@ import {
 import DashboardSidebar from "@/components/DashboardSidebar";
 import StatCard from "@/components/StatCard";
 import Pagination from "@/components/Pagination";
-import { mockLogEntries, type LogEntry } from "@/data/mockLogEntries";
+import { mockLogEntries } from "@/data/mockLogEntries";
 
 /* ========== MOCK DATA ========== */
 
@@ -138,7 +138,6 @@ export default function DashboardPage() {
     setCurrentPage(1);
   };
 
-  // @ts-ignore
   return (
       <div className="flex min-h-[calc(100vh-5rem)]">
         <DashboardSidebar />
@@ -240,7 +239,7 @@ export default function DashboardPage() {
                           borderRadius: "12px",
                           fontSize: "13px",
                         }}
-                        formatter={(value: number) => [`${value}%`, ""]}
+                        formatter={(value) => [`${value as number}%`, ""]}
                     />
                     <Legend
                         verticalAlign="bottom"

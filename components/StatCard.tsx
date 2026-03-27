@@ -1,12 +1,11 @@
 interface StatCardProps {
-  icon: string;
   title: string;
   value: string;
   change: string;
   trend: "up" | "down";
 }
 
-export default function StatCard({ icon, title, value, change, trend }: StatCardProps) {
+export default function StatCard({ title, value, change, trend }: StatCardProps) {
   return (
     <div className="card-heal p-6 group cursor-default">
       <div className="flex items-center gap-3 mb-3">
