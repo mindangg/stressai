@@ -29,14 +29,6 @@ const menuSections: { title: string; items: SidebarItem[] }[] = [
     ],
   },
   {
-    title: "QUẢN LÝ",
-    items: [
-      { icon: <Users size={18} />, label: "Người dùng" },
-      { icon: <HeartHandshake size={18} />, label: "Kết nối chuyên gia" },
-      { icon: <ClipboardPenLine size={18} />, label: "Phản hồi" },
-    ],
-  },
-  {
     title: "HỆ THỐNG",
     items: [
       { icon: <Settings size={18} />, label: "Cài đặt" },
